@@ -3,11 +3,11 @@
 
 <suite name ="Suite">
     <listeners>
-        <listener class-name = "Listeners"/>
+        <listener class-name = "Resourses.Listeners"/>
     </listeners>
     <test name = "Test">
         <classes>
-            <class name = "HomePage"/>
+            <class name = "utils.HomePage"/>
         </classes>
         </test> <!--Test-->
 </suite>
