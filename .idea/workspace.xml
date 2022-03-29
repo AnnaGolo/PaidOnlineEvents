@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40abaabe-b4d9-4f8f-abeb-d8c8701991e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/FeedPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/New.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Resourses/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Resourses/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Resourses/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Resourses/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Resourses/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Listeners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/FeedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/FeedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/FeedPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/HomePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
       <recent name="pageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePage.eventsCreation">
+  <component name="RunManager" selected="TestNG.HomePage.createEvent">
     <configuration name="C:/Users/golov/IdeaProjects/POE/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POE" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -93,6 +83,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomePage.createEvent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.HomePage" />
+      <option name="METHOD_NAME" value="createEvent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePage.eventsCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POE" />
       <extension name="coverage">
@@ -113,9 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePage.eventsCreation" />
-        <item itemvalue="TestNG.HomePage.basePageNav" />
+        <item itemvalue="TestNG.HomePage.createEvent" />
         <item itemvalue="TestNG.HomePage" />
+        <item itemvalue="TestNG.HomePage.basePageNav" />
+        <item itemvalue="TestNG.HomePage.eventsCreation" />
         <item itemvalue="TestNG.C:/Users/golov/IdeaProjects/POE/testng.xml" />
       </list>
     </recent_temporary>
