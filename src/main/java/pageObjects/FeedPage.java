@@ -48,6 +48,10 @@ public class FeedPage extends TestNGUtils {
         return driver.findElement(eventType);
     }
     public WebElement chooseLocation(){
+        WebDriverWait wait = new WebDriverWait(driver,  50);
+        WebElement ele = driver.findElement(eventLocation);
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", ele);
         return driver.findElement(eventLocation);
     }
     public boolean eventDetailsTitleCheck(){
@@ -57,7 +61,7 @@ public class FeedPage extends TestNGUtils {
         return driver.findElement(eventName);
     }
     public WebElement chooseDate(){
-        WebDriverWait wait = new WebDriverWait(driver,  20);
+        WebDriverWait wait = new WebDriverWait(driver,  40);
         wait.until(ExpectedConditions.elementToBeClickable(calendarDate));
         return driver.findElement(calendarDate);
     }

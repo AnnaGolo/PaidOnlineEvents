@@ -2,10 +2,13 @@ package utils;
 
 import Resourses.Base;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pageObjects.EditPage;
 import pageObjects.FeedPage;
 import pageObjects.LoginPage;
 
@@ -18,7 +21,9 @@ public class HomePage extends Base {
     public static final String PASSWORD = "fesco7635";
     public static final String EVENT_NAME_IN = "My first Event";
     public static final String DESCRIPTION = "Please come to my first event";
-    public static final String ACTUAL_RESULT_DATE = "WEDNESDAY, APRIL 6, 2022 AT 10:00 PM PDT";
+    public static final String ACTUAL_RESULT_DATE = "THURSDAY, APRIL 7, 2022 AT 12:00 PM PDT";
+    public static final String NEW_EVENT_NAME = "Edited name";
+    public static final String NEW_DESCRIPTION = "New Description";
 
     final static By PRIVACY = By.xpath("//div[@class='tojvnm2t a6sixzi8 k5wvi7nf q3lfd5jv pk4s997a bipmatt0 cebpdrjk qowsmv63 owwhemhu dp1hu0rb dhp61c6y l9j0dhe7 iyyx5f41 a8s20v7p']");
     final static By EVENT_NAME = By.xpath("//input[@class='oajrlxb2 f1sip0of hidtqoto e70eycc3 lzcic4wl g5ia77u1 gcieejh5 bn081pho humdl8nn izx4hr6d rq0escxv oo9gr5id qc3s4z1d knj5qynh fo6rh5oj osnr6wyh hv4rvrfc dati1w0a p0x8y401 k4urcfbm iu8raji3 nfbje2wv']");
@@ -82,6 +87,61 @@ public class HomePage extends Base {
 
         Assert.assertEquals(actualName,EVENT_NAME_IN);
         Assert.assertEquals(actualEventDate, ACTUAL_RESULT_DATE);
+
+        }
+        @Test
+        public void EditPage() throws InterruptedException {
+            driver.manage().timeouts();
+            LoginPage l = new LoginPage(driver);
+            l.getEmail().sendKeys(EMAIL);
+            l.getPassword().sendKeys(PASSWORD);
+            l.logIn().click();
+            FeedPage feedPage = new FeedPage(driver);
+            driver.manage().window().maximize();
+            feedPage.selectEvents().click();
+            feedPage.createNewEvent().click();
+            feedPage.createOnlineNewEvent().click();
+            //feedPage.chooseLocation().click();
+            feedPage.inputName().sendKeys(EVENT_NAME_IN);
+            feedPage.chooseDate().click();
+            feedPage.chooseTime().click();
+            feedPage.choosePrivacy().click();
+            feedPage.choosePrivacyOption().click();
+            feedPage.clickNext().click();
+            feedPage.chooseEventLocation().click();
+            feedPage.checkLocationTitle().isDisplayed();
+            feedPage.checkPopUp().click();
+            feedPage.tapNext().click();
+            feedPage.checkDescriptionTitle().isDisplayed();
+            feedPage.addDescription().sendKeys(DESCRIPTION);
+            feedPage.tapDesrNextButton().click();
+            feedPage.chooseIllustration().click();
+            feedPage.chooseFoodAndDrink().click();
+            feedPage.createEventFinal().click();
+
+            EditPage edit = new EditPage(driver);
+            edit.editButtonAction().click();
+
+            edit.clickNameClear().click();
+
+            edit.clickNameClear().sendKeys(Keys.CONTROL + "a");
+            edit.clickNameClear().sendKeys(Keys.DELETE);
+
+            edit.changeName().sendKeys(NEW_EVENT_NAME);
+
+
+            edit.clickNextButtonEditedName().click();
+            edit.chooseOtherLocation().click();
+            edit.clickNextButtonLocation().click();
+
+            edit.cleanDescription().click();
+            edit.cleanDescription().sendKeys(Keys.CONTROL + "a");
+            edit.cleanDescription().sendKeys(Keys.DELETE);
+            edit.cleanDescription().sendKeys(NEW_DESCRIPTION);
+
+            edit.clickNextButtonDescriptionArea().click();
+            edit.chooseNewImage().click();
+            edit.clickEventUpdate().click();
 
     }
 }
