@@ -69,9 +69,6 @@ public class FeedPage extends TestNGUtils {
         return driver.findElement(eventTime);
     }
     public WebElement choosePrivacy(){
-        //JavascriptExecutor js = (JavascriptExecutor)driver;
-        //WebElement ele = driver.findElement(privacy);
-       // js.executeScript("arguments[0].click()", ele);
         return driver.findElement(privacy);
     }
     public WebElement choosePrivacyOption(){

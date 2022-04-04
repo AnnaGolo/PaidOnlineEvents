@@ -23,11 +23,6 @@ public class EditPage extends TestNGUtils {
     By newImage = By.xpath("//img[@alt= 'Seasons and Holiday']");
     By updateEventButton = By.xpath("//div[@aria-label= 'Update']");
 
-
-
-
-
-
     public EditPage(WebDriver driver) {
 
         this.driver = driver;
@@ -40,8 +35,6 @@ public class EditPage extends TestNGUtils {
     }
 
     public WebElement changeName() throws InterruptedException {
-        //WebDriverWait wait = new WebDriverWait(driver,  40);
-        //wait.until(ExpectedConditions.textToBePresentInElementValue(eventNameEdit, ""));
         WebElement ele = driver.findElement(eventNameEdit);
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", ele);

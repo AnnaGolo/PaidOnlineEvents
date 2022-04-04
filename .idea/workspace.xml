@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40abaabe-b4d9-4f8f-abeb-d8c8701991e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/EditPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/EditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/EditPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/FeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/FeedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/EditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/EditPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/FeedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/FeedPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/HomePage.class" afterDir="false" />
     </list>
@@ -58,7 +59,7 @@
       <recent name="pageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePage.EditPage">
+  <component name="RunManager" selected="TestNG.HomePage.createEvent">
     <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POE" />
       <option name="PACKAGE_NAME" value="" />
@@ -138,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePage.EditPage" />
         <item itemvalue="TestNG.HomePage.createEvent" />
+        <item itemvalue="TestNG.HomePage.EditPage" />
         <item itemvalue="TestNG.HomePage.basePageNav" />
         <item itemvalue="TestNG.HomePage" />
         <item itemvalue="TestNG.HomePage.eventsCreation" />
